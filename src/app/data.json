@@ -1,6 +1,7 @@
 {
 "name": "Andrew Grant",
 "avatar": "https://avatars.githubusercontent.com/u/107490514?v=4",
+
 "links": [
 {
 "title": "Github",
@@ -11,5 +12,14 @@
   "title": "LinkedIn",
   "href": "https://www.linkedin.com/in/andrewjbgrant/"
 }
+],
+
+"CV": [
+  {"title": "CV",
+  "href": "/public/CV.2nd-Nov.pdf"
+  }
 ]
+
+
+
 }
