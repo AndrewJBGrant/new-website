@@ -1,15 +1,15 @@
 {
 "name": "Andrew Grant",
-"avatar": "file:///Users/andrewgrant/Downloads/Canva-Profile.png",
+"avatar": "https://avatars.githubusercontent.com/u/107490514?v=4",
 "links": [
 {
 "title": "Github",
-"url": "https://github.com/AndrewJBGrant"
+"href": "https://github.com/AndrewJBGrant"
 },
 
 {
   "title": "LinkedIn",
-  "url": "https://www.linkedin.com/in/andrewjbgrant/"
+  "href": "https://www.linkedin.com/in/andrewjbgrant/"
 }
 ]
 }
