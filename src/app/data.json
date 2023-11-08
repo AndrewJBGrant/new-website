@@ -59,9 +59,47 @@
   "title": "Figma",
   "logo": "/icons/figma.svg"
 }
+],
 
-
+"projects": [
+{
+  "title": "Sweet Paw",
+  "link": "https://sweet-paw.herokuapp.com/",
+  "githubLink": "https://github.com/dvnishshanka/sweet-paw",
+  "description": "",
+  "video": "https://www.youtube-nocookie.com/embed/HRLhXzDTjv0",
+  "skills": [
+    "Ruby on Rails",
+    "SCSS",
+    "JavaScript"
+  ]
+},
+{
+  "title": "Book Buddy",
+  "link": "",
+  "githubLink": "",
+  "description": "",
+  "video": "",
+  "skills": [
+    "Ruby on Rails",
+    "SCSS",
+    "JavaScript"
+  ]
+},
+{
+  "title": "Focus-Notes",
+  "link": "",
+  "githubLink": "",
+  "description": "",
+  "video": "",
+  "skills": [
+    "TypeScript",
+    "Tailwind",
+    "React"
+  ]
+}
 ]
+
 
 
 

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import data from "./data.json";
-import Link from "./LInkCard";
+import Link from "./Link";
 
 export default function Home() {
 
@@ -45,26 +45,20 @@ export default function Home() {
         ))}
       </section>
         </article>
-<aside className="flex">
-
-
-
+<aside className="flex items-center gap-6">
 {data.icons.map((icons) => (
-<span className="flex flex-col justify-center"><Image
+<div className="flex flex-col items-center"><Image
     src={icons.logo}
-    key={icons.title}
+    key={Math.random()}
     alt={icons.title}
     className="hover:drop-shadow-lg hover:scale-110 transition-all"
-    width={80}
+    width={60}
     height={20}
     priority />
 
     <span className="">{icons.title}</span>
-    </span>
+    </div>
 ))}
-
-
-
 </aside>
 
 <section className="break-normal flex flex-col justify-center mx-auto">
