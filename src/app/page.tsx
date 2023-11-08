@@ -1,52 +1,84 @@
 import Image from "next/image";
 import data from "./data.json";
-import LinkCard from "./LInkCard";
+import Link from "./LInkCard";
 
 export default function Home() {
+
+
   return (
     <>
-      <div className="flex flex-col mx-auto w-full justify-center mt-16 px-8">
+      <div className="flex flex-col mx-auto w-2/3 justify-center mt-16 px-8">
 
 
-        <article>
+        <article className="w-2/3">
         <Image
-          className="float-left aspect-[1/1] lg:aspect-[1/2]
+          className="float-left
     rounded-full mb-0 mr-6
-
+[clip-path:circle(70%_at_20%_30%)]
     [shape-outside:circle(70%_at_20%_30%)]
-   
-    md:[shape-outside:polygon(0%_0%,100%_0%,75%_100%,0%_100%)]"
+    md:[clip-path:polygon(0%_0%,100%_0%,75%_100%,0%_100%)]
+    md:[shape-outside:polygon(0%_0%,100%_0%,75%_100%,0%_100%)]
+"
           alt={data.name}
           src={data.avatar}
-          width={120}
-          height={120}
+          width={180}
+          height={180}
         />
 
-          <p className="">{data.heading}</p>
+          <h2 className="">{data.heading}</h2>
           <h1 className="font-bold text-xl">{data.name}</h1>
 
-          <p>{data.intro}</p>
-        </article>
-
-
-
-
-
+          <h2>{data.intro}</h2>
 
       {/* // Links */}
       <section className="flex justify-center mx-auto">
         {data.links.map((link) => (
-          <LinkCard key={link.href} {...link} />
+          <Link key={link.href} {...link} />
         ))}
 
         {data.CV.map((cv) => (
-          <LinkCard
+          <Link
             key={cv.href}
             download={"Download Andrew Grant CV"}
             {...cv}
           />
         ))}
       </section>
+        </article>
+<aside className="flex">
+
+
+
+{data.icons.map((icons) => (
+<span className="flex flex-col justify-center"><Image
+    src={icons.logo}
+    key={icons.title}
+    alt={icons.title}
+    className="hover:drop-shadow-lg hover:scale-110 transition-all"
+    width={80}
+    height={20}
+    priority />
+
+    <span className="">{icons.title}</span>
+    </span>
+))}
+
+
+
+</aside>
+
+<section className="break-normal flex flex-col justify-center mx-auto">
+<h1 className="font-bold text-xl">About Me</h1>
+
+<p>{data.about1}</p>
+<p>{data.para2}</p>
+<p>{data.para3}</p>
+
+</section>
+
+
+
+
       </div>
     </>
   );

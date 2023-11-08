@@ -1,4 +1,4 @@
-export default function LinkCard({
+export default function Link({
   href,
   title,
 }: {
