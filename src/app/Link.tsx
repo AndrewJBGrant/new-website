@@ -9,7 +9,7 @@ export default function Link({
   return (
     <a
       href={href}
-      className="flex items-center p-4 w-full rounded-sm hover:scale-110 transition-all mb-3"
+      className="flex items-center p-4 w-full rounded-sm hover:scale-150 transition-all mb-3"
     >
       <div className="flex flex-col">
         <h2 className="font-bold text-lg">{title}</h2>

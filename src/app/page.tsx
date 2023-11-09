@@ -2,6 +2,7 @@ import Image from "next/image";
 import data from "./data.json";
 import Link from "./Link";
 import ThemeChanger from "./ThemeChanger";
+import Card from "./Cards";
 
 export default function Home() {
 
@@ -52,9 +53,9 @@ export default function Home() {
     src={icons.logo}
     key={Math.random()}
     alt={icons.title}
-    className="hover:drop-shadow-lg hover:scale-110 transition-all"
+    className="hover:drop-shadow-lg hover:animate-spin hover:scale-110 transition-all"
     width={60}
-    height={20}
+    height={80}
     priority />
 
     <span className="">{icons.title}</span>
@@ -70,6 +71,8 @@ export default function Home() {
 <p>{data.para3}</p>
 
 </section>
+
+<Card />
 
 <ThemeChanger />
 
