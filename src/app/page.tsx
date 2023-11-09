@@ -1,6 +1,7 @@
 import Image from "next/image";
 import data from "./data.json";
 import Link from "./Link";
+import ThemeChanger from "./ThemeChanger";
 
 export default function Home() {
 
@@ -70,8 +71,7 @@ export default function Home() {
 
 </section>
 
-
-
+<ThemeChanger />
 
       </div>
     </>
