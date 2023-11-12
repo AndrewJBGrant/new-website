@@ -22,6 +22,7 @@ export default function Home() {
     md:[shape-outside:polygon(0%_0%,100%_0%,75%_100%,0%_100%)]
 "
           alt={data.name}
+          key={Math.random()}
           src={data.avatar}
           width={180}
           height={180}
@@ -35,19 +36,19 @@ export default function Home() {
       {/* // Links */}
       <section className="flex justify-center mx-auto">
         {data.links.map((link) => (
-          <Link key={link.href} {...link} />
+          <Link key={Math.random()} {...link} />
         ))}
 
         {data.CV.map((cv) => (
           <Link
-            key={cv.href}
+            key={Math.random()}
             download={"Download Andrew Grant CV"}
             {...cv}
           />
         ))}
       </section>
         </article>
-<aside className="flex items-center gap-6">
+<section className="flex items-center gap-6">
 {data.icons.map((icons) => (
 <div className="flex flex-col items-center"><Image
     src={icons.logo}
@@ -61,7 +62,7 @@ export default function Home() {
     <span className="">{icons.title}</span>
     </div>
 ))}
-</aside>
+</section>
 
 <section className="break-normal flex flex-col justify-center mx-auto">
 <h1 className="font-bold text-xl">About Me</h1>
@@ -72,7 +73,7 @@ export default function Home() {
 
 </section>
 
-<Card />
+{/* <Card /> */}
 
 <ThemeChanger />
 

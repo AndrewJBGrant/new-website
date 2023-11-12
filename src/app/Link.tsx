@@ -9,6 +9,7 @@ export default function Link({
   return (
     <a
       href={href}
+      key={Math.random()}
       className="flex items-center p-4 w-full rounded-sm hover:scale-150 transition-all mb-3"
     >
       <div className="flex flex-col">
