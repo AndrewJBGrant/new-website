@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
-import { Kanit } from "next/font/google";
+// import { Kanit } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 
-const inter = Kanit({
-  subsets: ["latin"],
-  weight: "600",
-});
 
 export const metadata: Metadata = {
   title: "Andrew Grant",
@@ -21,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className="text-text bg">
+      <body className="text-text">
         <Providers>{children}</Providers>
       </body>
     </html>

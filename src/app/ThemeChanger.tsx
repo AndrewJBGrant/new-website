@@ -19,18 +19,9 @@ const ThemeSwitch = () => {
   return (
 <>
 Current theme: {theme}
-
-
-<span className={theme === "light" ? "light" : "dark"}></span>
-
 <button onClick={() => setTheme("light")}>Light Theme</button>
 <button onClick={() => setTheme("dark")}>Dark Theme</button>
-
-<button>THEMESSSSSS</button>
-
 </>
-
-
   )
 }
 

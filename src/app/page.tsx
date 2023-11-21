@@ -12,7 +12,7 @@ export default function Home() {
       <div className="flex flex-col mx-auto w-2/3 justify-center mt-16 px-8">
 
 
-        <article className="w-2/3">
+        <article className="w-2/3 font-sans">
         <Image
           className="float-left
     rounded-full mb-0 mr-6
@@ -34,7 +34,7 @@ export default function Home() {
           <h2>{data.intro}</h2>
 
       {/* // Links */}
-      <main className="flex justify-center mx-auto">
+      <main className="flex justify-center mx-auto font-serif">
         {data.links.map((link, index) => (
           <Link key={index} {...link} />
         ))}
@@ -48,7 +48,7 @@ export default function Home() {
         ))}
       </main>
         </article>
-<aside className="flex items-center gap-6">
+<aside className="flex items-center gap-6 font-extrabold">
 {data.icons.map((icons) => (
 <div key={icons.id} className="flex flex-col items-center"><Image
 
