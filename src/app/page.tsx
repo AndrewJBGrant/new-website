@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col mx-auto w-2/3 justify-center mt-16 px-8 text-secondary">
+      <div className="flex flex-col mx-auto w-2/3 justify-center mt-16 px-8">
 
 
         <article className="w-2/3">
@@ -22,7 +22,7 @@ export default function Home() {
     md:[shape-outside:polygon(0%_0%,100%_0%,75%_100%,0%_100%)]
 "
           alt={data.name}
-          key={Math.random()}
+
           src={data.avatar}
           width={180}
           height={180}
@@ -34,7 +34,7 @@ export default function Home() {
           <h2>{data.intro}</h2>
 
       {/* // Links */}
-      <section className="flex justify-center mx-auto">
+      <main className="flex justify-center mx-auto">
         {data.links.map((link, index) => (
           <Link key={index} {...link} />
         ))}
@@ -46,13 +46,13 @@ export default function Home() {
             {...cv}
           />
         ))}
-      </section>
+      </main>
         </article>
-<section className="flex items-center gap-6 bg-primary">
-{data.icons.map((icons, index) => (
-<div className="flex flex-col items-center"><Image
+<aside className="flex items-center gap-6">
+{data.icons.map((icons) => (
+<div key={icons.id} className="flex flex-col items-center"><Image
+
     src={icons.logo}
-    key={index}
     alt={icons.title}
     className="hover:drop-shadow-lg hover:animate-spin hover:scale-110 transition-all"
     width={60}
@@ -62,16 +62,16 @@ export default function Home() {
     <span className="">{icons.title}</span>
     </div>
 ))}
-</section>
+</aside>
 
-<section className="break-normal flex flex-col justify-center mx-auto dark:text-red-900">
+<article className="break-normal flex flex-col justify-center mx-auto">
 <h1 className="font-bold text-xl">About Me</h1>
 
 <p>{data.about1}</p>
 <p>{data.para2}</p>
 <p>{data.para3}</p>
 
-</section>
+</article>
 
 {/* <Card /> */}
 

@@ -20,13 +20,18 @@ const config: Config = {
   plugins: [
     createThemes({
       light: {
-        primary: "steelblue",
+        primary: "#ffffff",
         secondary: "red",
 
-        text: "red",
+        text: "#503556",
       },
-      primary: "yellow",
+
+      dark: {
+      primary: "#22292f",
       secondary: "tomato",
+
+      text: "#ffffff"
+      }
     }),
   ],
 };
