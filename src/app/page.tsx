@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col mx-auto w-2/3 justify-center mt-16 px-8">
+      <div className="flex flex-col mx-auto w-2/3 justify-center mt-16 px-8 text-secondary">
 
 
         <article className="w-2/3">
@@ -35,24 +35,24 @@ export default function Home() {
 
       {/* // Links */}
       <section className="flex justify-center mx-auto">
-        {data.links.map((link) => (
-          <Link key={Math.random()} {...link} />
+        {data.links.map((link, index) => (
+          <Link key={index} {...link} />
         ))}
 
-        {data.CV.map((cv) => (
+        {data.CV.map((cv, index) => (
           <Link
-            key={Math.random()}
+            key={index}
             download={"Download Andrew Grant CV"}
             {...cv}
           />
         ))}
       </section>
         </article>
-<section className="flex items-center gap-6">
-{data.icons.map((icons) => (
+<section className="flex items-center gap-6 bg-primary">
+{data.icons.map((icons, index) => (
 <div className="flex flex-col items-center"><Image
     src={icons.logo}
-    key={Math.random()}
+    key={index}
     alt={icons.title}
     className="hover:drop-shadow-lg hover:animate-spin hover:scale-110 transition-all"
     width={60}
@@ -64,7 +64,7 @@ export default function Home() {
 ))}
 </section>
 
-<section className="break-normal flex flex-col justify-center mx-auto">
+<section className="break-normal flex flex-col justify-center mx-auto dark:text-red-900">
 <h1 className="font-bold text-xl">About Me</h1>
 
 <p>{data.about1}</p>

@@ -17,11 +17,20 @@ const ThemeSwitch = () => {
   }
 
   return (
-    <select value={theme} onChange={e => setTheme(e.target.value)}>
-      <option value="system">System</option>
-      <option value="dark">Dark</option>
-      <option value="light">Light</option>
-    </select>
+<>
+Current theme: {theme}
+
+
+<span className={theme === "light" ? "light" : "dark"}></span>
+
+<button onClick={() => setTheme("light")}>Light Theme</button>
+<button onClick={() => setTheme("dark")}>Dark Theme</button>
+
+<button>THEMESSSSSS</button>
+
+</>
+
+
   )
 }
 
