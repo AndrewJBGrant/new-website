@@ -21,7 +21,7 @@ export default function HeaderSection() {
           height={180}
         />
 
-          <h2 className="">{data.heading}</h2>
+          <h2 className="text-xl">{data.heading}</h2>
           <h1 className="font-bold text-2xl">{data.name}</h1>
 
           <h2>{data.intro}</h2>
