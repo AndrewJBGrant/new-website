@@ -5,7 +5,7 @@
 
 
 "heading": "Hello my name is",
-"intro": "🚀 Web developer on a mission to turn code into captivating user experiences. Seeking the perfect playground as a Junior Front-end enthusiast. Let's build the web together!.",
+"intro": "Web developer on a mission to turn code into captivating user experiences. Seeking a Junior Front-end role. Let's build the web together!.",
 
 "about1":"After more than a decade as a successful chef I sought a fresh challenge that would leverage my culinary expertise while allowing me to create collaborate and continuously learn.",
 
@@ -74,7 +74,7 @@
   "githubLink": "https://github.com/dvnishshanka/sweet-paw",
   "description": "",
   "video": "https://www.youtube-nocookie.com/embed/HRLhXzDTjv0",
-  "skills": [
+  "tags": [
     "Ruby on Rails",
     "SCSS",
     "JavaScript"
@@ -86,7 +86,7 @@
   "githubLink": "",
   "description": "",
   "video": "",
-  "skills": [
+  "tags": [
     "Ruby on Rails",
     "SCSS",
     "JavaScript"
@@ -98,13 +98,19 @@
   "githubLink": "",
   "description": "",
   "video": "",
-  "skills": [
+  "tags": [
     "TypeScript",
     "Tailwind",
     "React"
   ]
 }
-]
+],
+
+
+
+"githubLink": "https://github.com/AndrewJBGrant/new-website"
+
+
 
 
 

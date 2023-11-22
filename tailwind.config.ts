@@ -10,11 +10,25 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      keyframes: {
+        animatedgradient: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
       },
+      backgroundSize: {
+        '300%': '300%',
+      },
+      animation: {
+        gradient: 'animatedgradient 16s ease infinite alternate',
+      },
+
+      // backgroundImage: {
+      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      //   "gradient-conic":
+      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // },
     },
 fontFamily: {
       'sans': ['ui-sans-serif', 'system-ui'],
@@ -29,14 +43,14 @@ fontFamily: {
     createThemes({
       light: {
         primary: "#ffffff",
-        secondary: "red",
+       textsecondary: "#503556",
 
-        text: "#503556",
+        text: "#22292f",
       },
 
       dark: {
       primary: "#22292f",
-      secondary: "tomato",
+      textsecondary: "#a876ad",
 
       text: "#ffffff"
       }
