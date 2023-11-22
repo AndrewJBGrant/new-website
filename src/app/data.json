@@ -35,25 +35,25 @@
 
 "icons": [
 {
+  "title": "JavaScript",
+  "logo": "/icons/javascript.svg",
+  "id": 3
+},
+{
 "title": "Ruby on Rails",
 "logo": "/icons/rails.svg",
 "id": 1
 
 },
 {
-  "title": "React",
-  "logo": "/icons/react.svg",
-  "id": 2
-},
-{
-  "title": "JavaScript",
-  "logo": "/icons/javascript.svg",
-  "id": 3
-},
-{
   "title": "CSS",
   "logo": "/icons/CSS.svg",
   "id": 4
+},
+{
+  "title": "React",
+  "logo": "/icons/react.svg",
+  "id": 2
 },
 {
   "title": "TypeScript",

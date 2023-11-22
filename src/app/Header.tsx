@@ -8,7 +8,7 @@ export default function HeaderSection() {
   return (
         <article className="w-2/3 font-sans pl-8">
         <Image
-          className="float-left
+          className="float-left shadow-2xl
     rounded-full mb-0 mr-6
 [clip-path:circle(70%_at_20%_30%)]
     [shape-outside:circle(70%_at_20%_30%)]
@@ -16,7 +16,6 @@ export default function HeaderSection() {
     md:[shape-outside:polygon(0%_0%,100%_0%,75%_100%,0%_100%)]
 "
           alt={data.name}
-
           src={data.avatar}
           width={180}
           height={180}

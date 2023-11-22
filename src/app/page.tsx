@@ -1,6 +1,4 @@
-import data from "./data.json";
 import ThemeChanger from "./ThemeChanger";
-
 import HeaderSection from "./Header";
 import Icons from "./Icons";
 import AboutMe from "./About";
@@ -12,7 +10,6 @@ export default function Home() {
         <HeaderSection />
         <Icons />
         <AboutMe />
-
         <ThemeChanger />
       </div>
     </>
