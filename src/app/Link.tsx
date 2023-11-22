@@ -13,7 +13,7 @@ export default function Link({
       className="flex items-center p-4 w-full rounded-sm hover:scale-150 transition-all mb-3"
     >
       <div className="flex flex-col">
-        <h2 className="font-bold text-lg">{title}</h2>
+        <h2 className="font-bold text-2xl">{title}</h2>
       </div>
     </a>
   );

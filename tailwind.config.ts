@@ -24,11 +24,6 @@ fontFamily: {
       'body': ['"Open Sans"'],
     }
 
-
-
-
-
-
   },
   plugins: [
     createThemes({
