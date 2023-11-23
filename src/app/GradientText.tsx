@@ -18,4 +18,3 @@ export default function TextGradient(props: TextGradientProps) {
     </span>
   )
 }
-

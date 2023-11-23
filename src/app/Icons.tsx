@@ -18,7 +18,7 @@ return (
 
     src={icons.logo}
     alt={icons.title}
-    className="hover:drop-shadow-lg hover:animate-spin hover:scale-110 transition-all"
+    className="hover:drop-shadow-lg hover:animate-bounce hover:scale-110 transition-all"
     width={65}
     height={90}
     priority />

@@ -1,6 +1,8 @@
 import type { Config } from "tailwindcss";
 const { createThemes } = require("tw-colors");
 
+const plugin = require('tailwindcss/plugin')
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -21,7 +23,7 @@ const config: Config = {
         '300%': '300%',
       },
       animation: {
-        gradient: 'animatedgradient 16s ease infinite alternate',
+        gradient: 'animatedgradient 2s ease infinite alternate',
       },
 
       // backgroundImage: {
@@ -40,6 +42,25 @@ fontFamily: {
 
   },
   plugins: [
+
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          "animation-delay": (value: any) => {
+            return {
+              "animation-delay": value,
+            };
+          },
+        },
+        {
+          values: theme("transitionDelay"),
+        }
+      );
+    }),
+
+
+
+
     createThemes({
       light: {
         primary: "#ffffff",
