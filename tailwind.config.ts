@@ -23,7 +23,7 @@ const config: Config = {
         '300%': '300%',
       },
       animation: {
-        gradient: 'animatedgradient 2s ease infinite alternate',
+        gradient: 'animatedgradient 4s ease infinite alternate',
       },
 
       // backgroundImage: {
@@ -43,7 +43,7 @@ fontFamily: {
   },
   plugins: [
 
-    plugin(({ matchUtilities, theme }) => {
+    plugin(({ matchUtilities, theme }: { matchUtilities: any, theme: any}) => {
       matchUtilities(
         {
           "animation-delay": (value: any) => {

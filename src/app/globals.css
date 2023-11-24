@@ -7,3 +7,33 @@
     font-family: "Proxima Nova", system-ui, sans-serif;
   }
 } */
+
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+.animated-text {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #503556, #a876ad, #e5c5e0);
+  background-size: 200% 100%;
+  color: transparent;
+  background-clip: text;
+  animation: gradientAnimation 2s linear infinite;
+}
+
+.animate-delay-2 {
+  animation-delay: 2s;
+}
+
+.animate-delay-4 {
+  animation-delay: 4s;
+}

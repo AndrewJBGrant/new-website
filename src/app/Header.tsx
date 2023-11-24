@@ -5,6 +5,27 @@ import Link from "./Link";
 
 export default function HeaderSection() {
 
+
+let nIntervId: any
+
+function changeColor() {
+
+if (!nIntervId) {
+
+nIntervId = setInterval(flashText, 1000)
+}
+}
+
+function flashText() {
+
+
+}
+
+
+
+
+
+
   return (
         <article className="w-2/3 font-sans">
         <Image
@@ -16,15 +37,14 @@ export default function HeaderSection() {
           height={160}
         />
 
-
-
-
-
-
-
-
           <h2 className="text-xl text-textsecondary dark:text-textsecondary">{data.heading}</h2>
 
+
+   <div className="flex">
+      <span className="animated-text">Well</span>
+      <span className="animated-text animate-delay-2">Then</span>
+      <span className="animated-text animate-delay-4">Lets See</span>
+    </div>
 
 
 <div className="flex text-2xl">
@@ -33,13 +53,14 @@ export default function HeaderSection() {
 <h3 className="font-bold bg-gradient-to-r from-white via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient animation-delay-[1000ms] ">Hello.
 </h3>
 
-<h3 className="animation-delay-[4000ms] font-bold bg-gradient-to-r from-white via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient">
+{/* <h3 className="animation-delay-[4000ms] font-bold bg-gradient-to-r from-white via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient">
 There.
 </h3>
 
 <h3 className="font-bold bg-gradient-to-r from-white via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient animation-delay-[6000ms]">
 Goodbye
-</h3>
+</h3> */}
+
 </div>
 
 
