@@ -11,3 +11,6 @@ Leaving some bits down here....
     [shape-outside:circle(70%_at_20%_30%)]
     md:[clip-path:polygon(0%_0%,100%_0%,75%_100%,0%_100%)]
     md:[shape-outside:polygon(0%_0%,100%_0%,75%_100%,0%_100%)]
+
+nvm install --lts
+npm run dev
