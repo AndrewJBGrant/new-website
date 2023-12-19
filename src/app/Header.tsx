@@ -2,9 +2,7 @@ import Image from "next/image";
 import data from "./data.json";
 import Link from "./Link";
 
-
 export default function HeaderSection() {
-
 
 let nIntervId: any
 
@@ -18,16 +16,10 @@ nIntervId = setInterval(flashText, 1000)
 
 function flashText() {
 
-
 }
 
-
-
-
-
-
   return (
-        <article className="w-2/3 font-sans">
+        <header className="w-2/3 font-sans">
         <Image
           className="
     rounded-full"
@@ -38,13 +30,13 @@ function flashText() {
         />
 
           <h2 className="text-xl text-textsecondary dark:text-textsecondary">{data.heading}</h2>
-
+{/*
 
    <div className="flex">
       <span className="animated-text">Well</span>
       <span className="animated-text animate-delay-2">Then</span>
       <span className="animated-text animate-delay-4">Lets See</span>
-    </div>
+    </div> */}
 
 
 <div className="flex text-2xl">
@@ -85,7 +77,9 @@ Goodbye
             {...cv}
           />
         ))}
+
       </section>
-        </article>
+
+        </header>
 );
 };

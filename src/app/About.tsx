@@ -2,6 +2,7 @@ import TextGradient from "./GradientText";
 import data from "./data.json";
 
 export default function AboutMe() {
+
   return (
     <article className="break-normal flex flex-col justify-center border border-red-700 text-xl leading-7">
 
