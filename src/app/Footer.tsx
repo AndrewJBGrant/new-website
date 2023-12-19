@@ -7,9 +7,9 @@ export default function Footer() {
 
 return (
 
-  <footer className="bg-slate-500 p-6 flex flex-col border-t border-amber-700">
-  <span>Get in touch: andrewgrant2009@hotmail.com</span>
-  <span>Built with Next.js 13 & Tailwind</span>
+  <footer id="footer">
+  Get in touch: andrewgrant2009@hotmail.com
+  Built with Next.js 13 & Tailwind
 
 
      <a href={data.githubLink} target={"_blank"}>

@@ -1,20 +1,29 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import data from "./data.json";
 
-
 export default function Icons() {
+const [open, setOpen] = useState(false)
+
+const handleOpen = () => {
+  setOpen(!open);
+}
 
 return (
 <aside className="flex justify-center">
 
-
 <div>
-<h1>Tools and Skills</h1>
-<span></span>
+<button onClick={handleOpen}>JavaScript
+</button>
+{open ? <span>TypeScript React</span> : null }
+
 </div>
 
+<h1>Tools and Skills</h1>
+
 {data.icons.map((icons) => (
-<div key={icons.id} className="flex flex-col items-center hover:shadow-lg font-extrabold"><Image
+<div key={icons.id} className="flex flex-col items-center font-extrabold"><Image
 
     src={icons.logo}
     alt={icons.title}
@@ -28,5 +37,4 @@ return (
 ))}
 </aside>
 )
-
-}
+};

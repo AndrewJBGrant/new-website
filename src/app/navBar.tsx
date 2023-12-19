@@ -10,11 +10,9 @@ return (
   <li>About Me</li>
   <li>Skils</li>
   <li>Projects</li>
-  <li>Footer</li>
+  <a href="#footer">LINKTOME</a>
 </ul>
 </nav>
 )
 
 };
-
-

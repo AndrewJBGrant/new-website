@@ -4,13 +4,13 @@ import Link from "./Link";
 
 export default function HeaderSection() {
 
-let nIntervId: any
+let intervalId: any
 
 function changeColor() {
 
-if (!nIntervId) {
+if (!intervalId) {
 
-nIntervId = setInterval(flashText, 1000)
+intervalId = setInterval(flashText, 1000)
 }
 }
 
@@ -39,11 +39,7 @@ function flashText() {
     </div> */}
 
 
-<div className="flex text-2xl">
-
-
-<h3 className="font-bold bg-gradient-to-r from-white via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient animation-delay-[1000ms] ">Hello.
-</h3>
+<div>
 
 {/* <h3 className="animation-delay-[4000ms] font-bold bg-gradient-to-r from-white via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient">
 There.
@@ -59,7 +55,7 @@ Goodbye
 
 
 
-          <h1 className="font-bold text-2xl">{data.name}</h1>
+          <h1>{data.name}</h1>
 
           <h2>{data.intro}</h2>
 
