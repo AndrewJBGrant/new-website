@@ -8,7 +8,12 @@
   }
 } */
 
-
+.root,
+#root,
+#docs-root {
+  --light-color: #fff;
+  --dark-color: #22292f;
+}
 
 @keyframes gradientAnimation {
   0% {

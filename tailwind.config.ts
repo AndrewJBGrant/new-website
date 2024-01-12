@@ -12,6 +12,17 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+
+ colors: {
+        "primary-color": "var(--light-color)",
+        "secondary-color": "var(--dark-color)",
+        'purple1': '#503556',
+         'silver': '#ecebff',
+      },
+
+
+
+
       keyframes: {
         animatedgradient: {
           '0%': { backgroundPosition: '0% 50%' },
@@ -59,18 +70,16 @@ fontFamily: {
     }),
 
 
-
-
     createThemes({
       light: {
-        primary: "#ffffff",
+        primary: "#503556",
        textsecondary: "#503556",
 
         text: "#22292f",
       },
 
       dark: {
-      primary: "#22292f",
+      primary: "#503556",
       textsecondary: "#a876ad",
 
       text: "#ffffff"

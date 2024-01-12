@@ -19,10 +19,9 @@ function flashText() {
 }
 
   return (
-        <header className="w-2/3 font-sans">
+        <header className="font-sans">
         <Image
-          className="
-    rounded-full"
+          className="border-solid border-2 border-sky-500 dark:border-gray-200 rounded-full"
           alt={data.name}
           src={data.avatar}
           width={160}
