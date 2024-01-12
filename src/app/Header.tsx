@@ -21,7 +21,7 @@ function flashText() {
   return (
         <header className="font-sans">
         <Image
-          className="border-solid border-2 border-sky-500 dark:border-gray-200 rounded-full"
+          className="border-solid border-2 border-accent dark:border-accent rounded-full"
           alt={data.name}
           src={data.avatar}
           width={160}

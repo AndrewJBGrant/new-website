@@ -13,16 +13,6 @@ const config: Config = {
   theme: {
     extend: {
 
- colors: {
-        "primary-color": "var(--light-color)",
-        "secondary-color": "var(--dark-color)",
-        'purple1': '#503556',
-         'silver': '#ecebff',
-      },
-
-
-
-
       keyframes: {
         animatedgradient: {
           '0%': { backgroundPosition: '0% 50%' },
@@ -72,11 +62,17 @@ fontFamily: {
 
     createThemes({
       light: {
-        primary: "#503556",
-       textsecondary: "#503556",
+        primary: "#ffffff",
+        textsecondary: "#503556",
 
         text: "#22292f",
       },
+
+//  'lightColor': '#16181D',
+//       'darkColor': '#22292f',
+//         'accent': '#503556',
+
+
 
       dark: {
       primary: "#503556",

@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function NavBar() {
   return (
-    <nav className="bg-silver dark:bg-purple1 fixed top-0 h-screen">
+    <nav className="bg-primary dark:bg-primary text-text fixed top-0 h-screen">
       <ul>
         <li>Home</li>
         <li>About Me</li>

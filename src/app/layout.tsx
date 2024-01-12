@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className="text-text grid grid-cols-9 gap-1">
+      <body className="text-text grid grid-cols-9 gap-1 bg-primary dark:bg-primary">
         <Providers>{children}</Providers>
       </body>
     </html>
