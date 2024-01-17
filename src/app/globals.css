@@ -42,3 +42,8 @@
 .animate-delay-4 {
   animation-delay: 4s;
 }
+
+
+nav a {
+font-size: 2rem;
+}

@@ -11,7 +11,7 @@ const handleOpen = () => {
 }
 
 return (
-<aside className="flex justify-center">
+<aside className="flex justify-center" id="Icons">
 
 <div>
 <button onClick={handleOpen}>JavaScript

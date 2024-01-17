@@ -19,7 +19,7 @@ function flashText() {
 }
 
   return (
-        <header className="font-sans">
+        <header className="font-sans" id="Home">
         <Image
           className="border-solid border-2 border-accent dark:border-accent rounded-full"
           alt={data.name}
