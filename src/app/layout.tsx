@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import { Kanit } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import NavBar from "./Navigation/navBar";
 
 
 
@@ -19,7 +20,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className="text-text grid grid-cols-9 gap-1 bg-primary dark:bg-primary">
-        <Providers>{children}</Providers>
+        <Providers>
+           <div className="col-span-3">
+        <NavBar />
+      </div>
+
+
+          {children}</Providers>
       </body>
     </html>
   );

@@ -1,40 +1,53 @@
 "use client";
 
+// import useNav from "../Hooks/use-nav";
 import ThemeSwitch from "../ThemeChanger";
 import data from "../data.json";
 import { FaGithub } from "react-icons/fa";
 //import NavLink from "./NavLinks";
 import Link from "next/link";
-// import { usePathname } from 'next/navigation'
 
-import { useSelectedLayoutSegment } from "next/navigation";
+import { useRef } from "react";
+
 
 
 export default function NavBar()  {
-  const segment = useSelectedLayoutSegment()
+
+//   const listRef = useRef(null);
+
+// function scrollToIndex(index) {
+//   const listNode = listRef.current;
+// }
 
 
-// const pathName = usePathname()
+// const {
+//    isHomeActive,
+//     isAboutActive,
+//     isIconsActive,
+// } = useNav();
+
+
+
 
 const navBarLinks = [
 {
   name: "Home",
-  href: "#Home",
+  href: "#",
   activeSegment: null,
 },
 {
   name: "about",
-  href: "#about",
+  href: "#",
   activeSegment: "about",
 },
 {
  name: "Icons",
- href: "#Icons",
+ href: "#",
  activeSegment: "Icons",
 },
 ]
 
-console.log(segment, "Any here?")
+// console.log(segment, "Any here?")
 
 
   return (
@@ -45,51 +58,8 @@ console.log(segment, "Any here?")
 <div className="grid gap-2">
 
 
-
-{/* {navBarLinks.map(({link, name}) => (
-<Link
-key={name}
-href={link}
-className={pathName === link ? "bg-red-600" : "bg-slate-600"}
->{name}
-{link}</Link>
-
-))} */}
-{/* {navBarLinks.map((linked) => {
-  const isActive = pathName.startsWith(linked.link)
-
-return (
-  <Link
-  className={isActive ? "bg-orange-700" : "bg-green-600"}
-  href={linked.link}
-  key={linked.name}
->
-  {linked.name}
-</Link>
-)
-})} */}
-
-{navBarLinks.map((item) => (
-<Link
-key={item.name}
-href={item.href}
-className={segment === item.activeSegment ? "bg-amber-600" : "bg-fuchsia-600"}
->
-  {item.name}
-</Link>
-
-))}
-
-
-
 </div>
-
-
-
-
-
-
-      </ul>
+</ul>
       <span className="flex flex-row">
         <ThemeSwitch />
         <a href={data.githubLink} target={"_blank"}>
