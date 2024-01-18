@@ -14,7 +14,7 @@ export default function NavLink({
 
   let segment = useSelectedLayoutSegments();
   // let active = href === segment;
-  console.log("1",{segment})
+  // console.log("1",{segment})
   // console.log("2",{href, segment});
   // console.log("3",{ href, active });
 

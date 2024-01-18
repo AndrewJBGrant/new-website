@@ -2,6 +2,7 @@ import Image from "next/image";
 import data from "./data.json";
 import Link from "./Link";
 
+
 export default function HeaderSection() {
 
 let intervalId: any
