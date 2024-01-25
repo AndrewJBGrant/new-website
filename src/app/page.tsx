@@ -8,7 +8,7 @@ import NavBar from "./Navigation/navBar";
 export default function Home() {
 
 function hideNavBar() {
-const x = document.getElementById("navNav");
+const x  = document.getElementById("navNav")!;
 
 console.log(x)
 
