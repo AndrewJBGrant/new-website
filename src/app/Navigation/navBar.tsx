@@ -31,49 +31,50 @@ const scrollTo = (e: any) => {
   });
 };
 
+
 export default function NavBar() {
-  const [visSection, setVisSection] = useState<string>();
+  // const [visSection, setVisSection] = useState<string>();
 
-  const headerRef = useRef(null);
-  const aboutRef = useRef(null);
-  const skillsRef = useRef(null);
-  const projectsRef = useRef(null);
+  // const headerRef = useRef(null);
+  // const aboutRef = useRef(null);
+  // const skillsRef = useRef(null);
+  // const projectsRef = useRef(null);
 
-  const sectionRefs = [
-    { section: "About", ref: aboutRef },
-    { section: "Skills", ref: skillsRef },
-    { section: "Projects", ref: projectsRef },
-  ];
+  // const sectionRefs = [
+  //   { section: "About", ref: aboutRef },
+  //   { section: "Skills", ref: skillsRef },
+  //   { section: "Projects", ref: projectsRef },
+  // ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const { height: headerHeight } = getDimensions(headerRef.current);
-      const scrollPosition = window.scrollY + headerHeight;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const { height: headerHeight } = getDimensions(headerRef.current);
+  //     const scrollPosition = window.scrollY + headerHeight;
 
-      const selected = sectionRefs.find(({ section, ref }) => {
-        const element = ref.current;
+  //     const selected = sectionRefs.find(({ section, ref }) => {
+  //       const element = ref.current;
 
-        if (element) {
-          const { offsetBottom, offsetTop } = getDimensions(element);
-          return scrollPosition > offsetTop && scrollPosition < offsetBottom;
-        }
-      });
+  //       if (element) {
+  //         const { offsetBottom, offsetTop } = getDimensions(element);
+  //         return scrollPosition > offsetTop && scrollPosition < offsetBottom;
+  //       }
+  //     });
 
-      if (selected && selected.section !== visSection) {
-        console.log(selected.section, "What have we got?");
+  //     if (selected && selected.section !== visSection) {
+  //       console.log(selected.section, "What have we got?");
 
-        setVisSection(selected.section);
-      } else if (!selected && visSection) {
-        setVisSection(undefined);
-      }
-    };
+  //       setVisSection(selected.section);
+  //     } else if (!selected && visSection) {
+  //       setVisSection(undefined);
+  //     }
+  //   };
 
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [visSection]);
+  //   handleScroll();
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [visSection]);
 
   // const navBarLinks = [
   //   {
@@ -94,22 +95,22 @@ export default function NavBar() {
   // ];
 
   return (
-    <nav className="bg-primary dark:bg-primary text-text fixed top-0 h-screen">
-      <ul className="m-0 p-0 list-none grid gap-2 py-8">
+    <nav className="bg-primary dark:bg-primary text-text fixed top-0 h-screen border-solid border-2 border-sky-500">
+      <ul id="content" className="m-0 p-0 list-none grid gap-2 py-8">
         <div className="grid gap-2">
-          <div ref={headerRef}>
+          <div>
             <button
-              onClick={() => {
-                scrollTo(skillsRef.current);
-              }}
+              // onClick={() => {
+              //   scrollTo(skillsRef.current);
+              // }}
             >
               Home
             </button>
           </div>
-          <div ref={aboutRef}>
+          <div>
             <button>About</button>
           </div>
-          <div ref={skillsRef}>
+          <div>
             <button>Skills</button>
           </div>
         </div>
@@ -123,3 +124,5 @@ export default function NavBar() {
     </nav>
   );
 }
+
+// ref={headerRef} ref={skillsRef} ref={aboutRef}

@@ -2,6 +2,11 @@ import Image from "next/image";
 import data from "./data.json";
 import Link from "./Link";
 
+
+
+
+
+
 export default function HeaderSection() {
   // let intervalId: any
 
@@ -18,9 +23,9 @@ export default function HeaderSection() {
   // }
 
   return (
-    <header id="Home" className="min-h-screen">
+    <header id="Home" className="min-h-screen bg-orange-600">
 
-      <Image
+      <Image id="avatar"
         className="border-solid border-2 border-accent dark:border-accent rounded-full"
         alt={data.name}
         src={data.avatar}
@@ -31,7 +36,7 @@ export default function HeaderSection() {
       <h2 className="mb-4 mt-6 text-xl font-light leading-relaxed text-textsecondary dark:text-textsecondary">
         {data.heading}
       </h2>
-      <h1 className="font-extrabold text-4xl">{data.name}</h1>
+      <h1 className="font-extrabold text-4xl" id="name">{data.name}</h1>
 
 
        <h2 className="mb-4 mt-6 text-xl font-light leading-relaxed">{data.intro}</h2>
