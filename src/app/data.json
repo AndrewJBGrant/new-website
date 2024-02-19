@@ -68,7 +68,8 @@
 ],
 
 "projects": [
-{
+
+  {
   "title": "Sweet Paw",
   "link": "https://sweet-paw.herokuapp.com/",
   "githubLink": "https://github.com/dvnishshanka/sweet-paw",

@@ -4,6 +4,7 @@ import HeaderSection from "./Header";
 import Icons from "./Icons";
 import AboutMe from "./About";
 import NavBar from "./Navigation/navBar";
+import Projects from "./Projects";
 
 export default function Home() {
 
@@ -34,6 +35,9 @@ x.style.display = "none";
           <HeaderSection />
           <AboutMe />
           {/* <Icons /> */}
+
+
+<Projects />
         </section>
 
       </div>
