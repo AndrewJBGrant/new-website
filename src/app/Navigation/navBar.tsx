@@ -9,27 +9,27 @@ import Link from "next/link";
 
 import { useRef, useEffect, useState } from "react";
 
-const getDimensions = (ele: any) => {
-  //https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
-  const { height } = ele.getBoundingClientRect();
-  //https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
-  const offsetTop = ele.offsetTop;
-  const offsetBottom = offsetTop + height;
+// const getDimensions = (ele: any) => {
+//   //https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+//   const { height } = ele.getBoundingClientRect();
+//   //https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+//   const offsetTop = ele.offsetTop;
+//   const offsetBottom = offsetTop + height;
 
-  return {
-    height,
-    offsetTop,
-    offsetBottom,
-  };
-};
+//   return {
+//     height,
+//     offsetTop,
+//     offsetBottom,
+//   };
+// };
 
-const scrollTo = (e: any) => {
-  //https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
-  e.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
-};
+// const scrollTo = (e: any) => {
+//   //https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+//   e.scrollIntoView({
+//     behavior: "smooth",
+//     block: "start",
+//   });
+// };
 
 
 export default function NavBar() {
@@ -95,7 +95,7 @@ export default function NavBar() {
   // ];
 
   return (
-    <nav className="bg-primary dark:bg-primary text-text fixed top-0 h-screen border-solid border-2 border-sky-500">
+    <nav className="bg-primary dark:bg-primary text-text fixed top-0 h-screen border-solid border-2 p-4 w-1/3">
       <ul id="content" className="m-0 p-0 list-none grid gap-2 py-8">
         <div className="grid gap-2">
           <div>

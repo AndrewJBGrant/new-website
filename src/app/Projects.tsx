@@ -14,7 +14,7 @@ const myProjects = data.projects.map((project) => {
    return project.tags
 })
 
-console.log(myProjects)
+// console.log(myProjects)
 
   return (
     <article className="min-h-screen" id="About">

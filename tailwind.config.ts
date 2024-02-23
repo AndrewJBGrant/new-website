@@ -33,13 +33,6 @@ const config: Config = {
       //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       // },
     },
-fontFamily: {
-      'sans': ['ui-sans-serif', 'system-ui'],
-      'serif': ['ui-serif', 'Georgia'],
-      'mono': ['ui-monospace', 'SFMono-Regular'],
-      'display': ['Oswald'],
-      'body': ['"Open Sans"'],
-    }
 
   },
   plugins: [
@@ -67,13 +60,6 @@ fontFamily: {
 
         text: "#22292f",
       },
-
-//  'lightColor': '#16181D',
-//       'darkColor': '#22292f',
-//         'accent': '#503556',
-
-
-
       dark: {
       primary: "#503556",
       textsecondary: "#a876ad",
