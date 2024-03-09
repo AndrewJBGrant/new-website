@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import data from "./data.json";
+// import data from "./data.json";
 
 export default function Icons() {
 const [open, setOpen] = useState(false)
@@ -21,7 +21,7 @@ return (
 </div>
 
 <h1>Tools and Skills</h1>
-
+{/* 
 {data.icons.map((icons) => (
 <div key={icons.id} className="flex flex-col items-center font-extrabold"><Image
 
@@ -34,7 +34,7 @@ return (
 
     <span className="">{icons.title}</span>
     </div>
-))}
+))} */}
 </aside>
 )
 };

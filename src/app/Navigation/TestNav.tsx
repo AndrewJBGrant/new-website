@@ -32,7 +32,7 @@ return(
     </svg>
   )}
 
-<div className={`bg-blue-400 h-full left-0 top-0 fixed ease-in-out duration-300 ${ isOpen ? "translate-x-0" : "translate-x-full" }`}>
+<div className={`bg-blue-400 h-full right-0 top-0 fixed ease-in-out duration-300 ${ isOpen ? "translate-x-0" : "translate-x-full" }`}>
 <h2 className="mt-20 text-2xl">
 Hello We have a navbar here!!!
 </h2>

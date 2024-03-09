@@ -1,19 +1,4 @@
 {
-"name": "Andrew",
-"avatar": "https://avatars.githubusercontent.com/u/107490514?v=4",
-"picture": "/public/Canva-Profile.png",
-
-
-"heading": "Hello my name is",
-"intro": "Web developer on a mission to turn code into captivating user experiences. Seeking a Junior Front-end role. Let's build the web together!.",
-
-"about1":"After more than a decade as a successful chef I sought a fresh challenge that would leverage my culinary expertise while allowing me to create collaborate and continuously learn.",
-
-           "para2": "I took an interest in coding and enrolled in Le Wagon's Full stack Development Bootcamp working with Ruby we learnt the key concepts and practices of Object-oriented programming databases with SQL and Front-end with JavaScript HTML and CSS.",
-
-
-           "para3":"Building on those skills we moved on to the Rails framework and in teams of three we designed built and deployed two functioning Web applications. Since Graduating I have been working mainly with React and TypeScript to build projects. Utilizing testing to make my code more robust and reading up on good web design principles."
-,
 
 "links": [
 {
@@ -110,11 +95,4 @@
 
 
 "githubLink": "https://github.com/AndrewJBGrant/new-website"
-
-
-
-
-
-
-
 }
