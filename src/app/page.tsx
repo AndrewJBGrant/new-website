@@ -1,42 +1,15 @@
-"use client";
 
-// import HeaderSection from "./Header";
-import Icons from "./Icons";
-import AboutMe from "./About";
-
-import Projects from "./Projects";
-
-// import TestNav from "./Navigation/TestNav";
-import TestingNavBar from "./Navigation/TestingNav";
 
 export default function Home() {
 
-// const elem = document.getElementById("About");
-
-// console.log(typeof(elem), "What is about??")
-
-
   return (
     <>
-<div className="flex flex-col">
-
-{/* <aside className="flex-shrink">
-{/* <TestNav /> */}
-{/* </aside> */}
-
-<TestingNavBar />
-
-        <main className="flex-grow flex flex-col h-full p-12">
-
-
-
-          {/* <HeaderSection /> */}
-          <AboutMe />
-           <Icons />
-
-           <Projects />
+        <main className="h-screen mx-auto max-w-2xl px-5 py-12">
+          <div className="whitespace-pre-wrap">
+  <h1>Hello there I am Andrew</h1>
+  <p>Well now back in here and panicking</p>
+          </div>
         </main>
-</div>
 
     </>
   );

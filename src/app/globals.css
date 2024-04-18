@@ -1,12 +1,9 @@
 @tailwind base;
+h1 {
+  @apply text-4xl font-bold;
+}
 @tailwind components;
 @tailwind utilities;
-
-/* @layer base {
-  html {
-    font-family: "Proxima Nova", system-ui, sans-serif;
-  }
-} */
 
 .root,
 #root,
@@ -42,4 +39,3 @@
 .animate-delay-4 {
   animation-delay: 4s;
 }
-

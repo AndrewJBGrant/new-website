@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
-const { createThemes } = require("tw-colors");
+import { createThemes } from "tw-colors";
 
-const plugin = require('tailwindcss/plugin')
+import plugin from 'tailwindcss/plugin';
 
 const config: Config = {
   content: [
