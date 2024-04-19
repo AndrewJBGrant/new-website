@@ -39,3 +39,12 @@ h1 {
 .animate-delay-4 {
   animation-delay: 4s;
 }
+
+
+textarea {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    focus: none;
+}
